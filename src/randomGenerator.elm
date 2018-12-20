@@ -74,6 +74,6 @@ subscriptions model =
 view : Model -> Html Msg
 view model =
     div []
-        [ h1 [] [ text (String.fromInt model.dieFace) ]
+        [ h1 [] [ text String.fromInt model.dieFace ]
         , button [ onClick Roll ] [ text "Roll" ]
         ]
